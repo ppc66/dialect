@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wpc.mapper.RecordMapper">
+
+    <resultMap id="BaseResultMap" type="com.wpc.entity.Record">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="mainType" column="main_type" jdbcType="INTEGER"/>
+            <result property="subType" column="sub_type" jdbcType="INTEGER"/>
+            <result property="userid" column="userid" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="birthYear" column="birth_year" jdbcType="INTEGER"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="imgUrl" column="img_url" jdbcType="VARCHAR"/>
+            <result property="content" column="content" jdbcType="VARCHAR"/>
+            <result property="date" column="date" jdbcType="DATE"/>
+            <result property="province" column="province" jdbcType="VARCHAR"/>
+            <result property="city" column="city" jdbcType="VARCHAR"/>
+            <result property="district" column="district" jdbcType="VARCHAR"/>
+            <result property="longitude" column="longitude" jdbcType="DOUBLE"/>
+            <result property="latitude" column="latitude" jdbcType="DOUBLE"/>
+            <result property="url" column="url" jdbcType="VARCHAR"/>
+            <result property="select" column="select" jdbcType="INTEGER"/>
+            <result property="delete" column="delete" jdbcType="INTEGER"/>
+            <result property="approve" column="approve" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,main_type,sub_type,
+        userid,name,birth_year,
+        title,img_url,content,
+        date,province,city,
+        district,longitude,latitude,
+        url,select,delete,
+        approve
+    </sql>
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dialect-common" />
+        <module name="dialect-commom" />
+        <module name="dialect-dao" />
+        <module name="dialect-admin" />
+        <module name="dialect-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="untitled" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dialect-admin" options="-parameters" />
+      <module name="dialect-commom" options="-parameters" />
+      <module name="dialect-common" options="-parameters" />
+      <module name="dialect-dao" options="-parameters" />
+      <module name="dialect-service" options="-parameters" />
+    </option>
+  </component>
+</project>

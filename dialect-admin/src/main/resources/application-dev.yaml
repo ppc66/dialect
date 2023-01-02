@@ -1,0 +1,8 @@
+server:
+  port: 9001
+
+#  不这样swagger2 用不了
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
